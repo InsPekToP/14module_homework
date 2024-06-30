@@ -9,7 +9,7 @@
 </head>
 <body>
     <p class="txt">Список дел</p>
-    <input type="text" name="" value="" class="add_text">
+    <input type="text" name="" value="" class="task">
     <div><button class="add">Добавить</button>
         <button class="display">Отобразить</button>
     </div>
@@ -22,17 +22,7 @@
     <script src="js/index.js"></script>
     <script>
 
-        $("button.add").on('click',function(){
-            let value_add = $("input").val();
-            console.log(value_add);
-            $("div.add_element").show();
-        });
 
-        
-
-        $("button.display").on('click',function(){
-            $('div.display_add').append("<span>тест</span>");
-        });
 
 
 

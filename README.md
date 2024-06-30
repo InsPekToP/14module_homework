@@ -6,3 +6,15 @@
 Есть похожее задание в index2.js.
 
 
+
+        $("button.add").on('click',function(){
+            let value_add = $("input").val();
+            console.log(value_add);
+            $("div.add_element").show();
+        });
+
+        
+
+        $("button.display").on('click',function(){
+            $('div.display_add').append("<span>тест</span>");
+       });
