@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business_list</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <p class="txt">Список дел</p>
+    <input type="text" name="" value="" class="add_text">
+    <div><button class="add">Добавить</button>
+        <button class="display">Отобразить</button>
+    </div>
+    <div class="add_element" style="display: none;">Элемент был добавлен</div>
+    <div class="display_add"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
+    <script>
+
+        $("button.add").on('click',function(){
+            let value_add = $("input").val();
+            console.log(value_add);
+            $("div.add_element").show();
+        });
+
+        
+
+        $("button.display").on('click',function(){
+            $('div.display_add').append("<span>тест</span>");
+        });
+
+
+
+
+    </script>
+
 </body>
 </html>
